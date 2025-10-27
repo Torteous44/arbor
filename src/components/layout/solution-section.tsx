@@ -1,3 +1,5 @@
+import { UpArrow } from "../icons";
+
 export const SolutionSection = () => {
   return (
     <section className="relative w-full px-4 md:px-0  lg:px-0 py-16 md:py-24 lg:py-32 bg-background max-w-[90rem] mx-auto">
@@ -77,19 +79,7 @@ export const SolutionSection = () => {
                   disabled
                 />
                 <div className="absolute bottom-2 right-2 w-8 h-8 rounded-full bg-brand-green/20 border border-brand-green/50 flex items-center justify-center">
-                  <svg
-                    className="w-4 h-4 text-black"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
-                    />
-                  </svg>
+                  <UpArrow className="w-5 h-5 " />
                 </div>
               </div>
             </div>

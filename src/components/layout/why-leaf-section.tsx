@@ -65,7 +65,7 @@ export const WhyLeafSection = () => {
               tone="default"
               icon={
                 <Image
-                  src="/leafCloud.png"
+                  src="/leafCloud.svg"
                   alt="Leaf.cloud"
                   width={20}
                   height={20}

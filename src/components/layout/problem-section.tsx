@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 
 function Stat({ value, label }: { value: string; label: string }) {
   return (
-    <div className="mb-6 last:mb-0">
-      <div className="text-4xl md:text-5xl font-medium text-brand-green mb-2">
+    <div className="mb-4 last:mb-0">
+      <div className="text-4xl md:text-4xl font-medium text-brand-green mb-2">
         {value}
       </div>
       <div className="text-[11px] md:text-xs text-black/60 font-mono">

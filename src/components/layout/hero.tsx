@@ -64,14 +64,14 @@ export const Hero = () => {
         </div>
 
         {/* Bottom Content */}
-        <div className="absolute bottom-0 left-0 right-0 z-20 w-full px-4 md:px-8 lg:px-16 pb-8 sm:pb-10 md:pb-12">
+        <div className="absolute bottom-0 left-0 right-0 z-20 w-full px-4  pb-8 sm:pb-10 md:pb-12">
           {/* Mobile Layout */}
           <div className="md:hidden w-full">
             {/* Bottom row: Arrow left, Buttons right */}
             <div className="flex items-end justify-between">
               {/* Left: Scroll indicator */}
               <div className="flex items-center">
-                <UpArrow className="w-6 h-6 text-black/40 rotate-180 flex-shrink-0" />
+                <UpArrow className="w-6 h-6 text-black rotate-180 flex-shrink-0" />
               </div>
 
               {/* Right: CTAs - horizontal above 640px, stacked below */}
@@ -89,9 +89,9 @@ export const Hero = () => {
           {/* Desktop Layout */}
           <div className="hidden md:flex items-end justify-between">
             {/* Left side: Arrow and H1 */}
-            <div className="flex items-center gap-4">
-              <UpArrow className="w-7 h-7 text-black/40 rotate-180 flex-shrink-0" />
-              <h1 className="text-lg lg:text-xl text-black/70 whitespace-nowrap">
+            <div className="flex items-center gap-18">
+              <UpArrow className="w-7 h-7  rotate-180 flex-shrink-0" />
+              <h1 className="text-lg lg:text-xl text-black whitespace-nowrap">
                 Intelligence with a smaller footprint.
               </h1>
             </div>

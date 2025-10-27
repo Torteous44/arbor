@@ -13,8 +13,8 @@ export default function Home() {
       <Hero />
       <ProblemSection />
       <SolutionSection />
-      <HowItWorksSection />
       <WhyLeafSection />
+      <HowItWorksSection />
       <PhilosophyCTASection />
     </main>
   );

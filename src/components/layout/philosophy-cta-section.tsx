@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export const PhilosophyCTASection = () => {
   return (
-    <section className="relative w-full px-4 md:px-8 lg:px-16 py-24 md:py-32 lg:py-40 overflow-hidden bg-gradient-to-b from-[#fafaf8] via-[#f7fbf8] to-[#f5f8f5]">
+    <section className="relative w-full px-4 md:px-8 lg:px-16 py-24 md:py-32 lg:py-40 overflow-hidden bg-gradient-to-b from-[#fefefe] via-[#f7fbf9] to-[#f5f8f5]">
       <div className="max-w-[90rem] mx-auto relative">
         {/* soft radial highlight */}
         <div
@@ -26,16 +26,16 @@ export const PhilosophyCTASection = () => {
           <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-5 mb-6 md:mb-8">
             <Button
               variant="solid"
-              className="text-sm md:text-sm px-5 py-3 md:px-6 md:py-3 bg-black text-white hover:bg-black/90 rounded-full"
+              className="text-sm md:text-xs px-5 py-3 md:px-6 md:py-3 bg-black text-white hover:bg-black/90 rounded-full"
             >
-              Start using sustainable AI
+              START USING SUSTAINABLE AI
             </Button>
 
             <Button
               variant="outline"
-              className="text-sm md:text-sm px-5 py-3 md:px-6 md:py-3 rounded-full border border-black/20 text-black/80 hover:bg-black/[0.03] font-mono"
+              className="text-sm md:text-xs px-5 py-3 md:px-6 md:py-3 rounded-full border border-black/20 text-black/80 font-mono"
             >
-              Read the manifesto
+              READ THE MANIFESTO
             </Button>
           </div>
 
