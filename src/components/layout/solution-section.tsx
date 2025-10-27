@@ -2,7 +2,7 @@ import { UpArrow } from "../icons";
 
 export const SolutionSection = () => {
   return (
-    <section className="relative w-full px-4 md:px-0  lg:px-0 py-16 md:py-24 lg:py-32 bg-background max-w-[90rem] mx-auto">
+    <section className="relative w-full px-4 md:px-4  lg:px-4 py-16 md:py-24 lg:py-32 bg-background max-w-[90rem] mx-auto">
       <div className="w-full">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-8 md:mb-12">

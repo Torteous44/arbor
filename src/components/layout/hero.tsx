@@ -70,7 +70,7 @@ export const Hero = () => {
         </div>
 
         {/* Bottom Content */}
-        <div className="absolute bottom-0 left-0 right-0 z-20 w-full px-4  pb-8 sm:pb-10 md:pb-12">
+        <div className="absolute bottom-0 left-0 right-0 z-20 w-full px-4 pb-8 sm:pb-10 md:pb-12">
           {/* Mobile Layout */}
           <div className="md:hidden w-full">
             {/* Bottom row: Arrow left, Buttons right */}
@@ -82,15 +82,15 @@ export const Hero = () => {
 
               {/* Right: CTAs - horizontal above 640px, stacked below */}
               <div className="flex flex-col sm:flex-row items-end gap-3">
-                <Button 
-                  variant="solid" 
+                <Button
+                  variant="solid"
                   className="whitespace-nowrap"
                   onClick={openWaitingList}
                 >
                   TRY ARBOR
                 </Button>
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   className="whitespace-nowrap"
                   onClick={openWaitingList}
                 >
@@ -111,8 +111,12 @@ export const Hero = () => {
             </div>
             {/* Right CTAs */}
             <div className="flex items-center gap-4">
-              <Button variant="solid" onClick={openWaitingList}>TRY ARBOR</Button>
-              <Button variant="outline" onClick={openWaitingList}>USE THE API</Button>
+              <Button variant="solid" onClick={openWaitingList}>
+                TRY ARBOR
+              </Button>
+              <Button variant="outline" onClick={openWaitingList}>
+                USE THE API
+              </Button>
             </div>
           </div>
         </div>
