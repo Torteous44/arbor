@@ -11,7 +11,7 @@ export const PhilosophyCTASection = () => {
         />
 
         {/* content panel */}
-        <div className="relative max-w-4xl mx-auto rounded-[1.5rem]  bg-white/60 backdrop-blur-[2px] shadow-[0_40px_120px_rgba(0,0,0,0.08)] px-6 py-12 md:px-10 md:py-14 text-center flex flex-col items-center">
+        <div className="relative max-w-4xl mx-auto   px-6 py-12 md:px-10 md:py-14 text-center flex flex-col items-center">
           {/* Headline */}
           <h2 className="text-[1.5rem] md:text-[1.5rem] lg:text-[2rem] leading-[1.1] font-medium text-black mb-4 md:mb-6">
             AI should reason like a human — and care like one.

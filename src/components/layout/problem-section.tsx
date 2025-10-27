@@ -24,7 +24,7 @@ export const ProblemSection = () => {
     <section className="bg-[rgb(250,250,248)] px-4 md:px-8 lg:px-16 py-16 md:py-24 lg:py-32">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 max-w-[90rem] mx-auto">
         {/* Left column */}
-        <div className="flex flex-col">
+        <div className="flex flex-col justify-center">
           <div className="">
             <h2 className="text-[1.75rem] sm:text-[2rem] md:text-[2.25rem] leading-[1.1] font-medium text-black mb-4">
               AI is powerful. But it's energy-hungry.

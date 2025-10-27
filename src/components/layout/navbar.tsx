@@ -11,42 +11,47 @@ export const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-black/5">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-black/2">
         <div className="md:max-w-[90rem] md:mx-auto px-4 py-4 flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center flex-shrink-0">
-            <Image
-              src="/logo.svg"
-              alt="Arbor"
-              width={100}
-              height={28}
-              className="w-[100px] h-[28px]"
-              priority
-            />
-          </Link>
-
-          {/* Desktop Navigation Links */}
-          <div className="hidden md:flex items-center gap-6 lg:gap-8">
-            <Link
-              href="/api"
-              className="text-sm text-black hover:text-brand-green  transition-colors"
-            >
-              API
-            </Link>
-            <Link
-              href="/company"
-              className="text-sm text-black hover:text-brand-green  transition-colors"
-            >
-              COMPANY
-            </Link>
-            <Link
-              href="/news"
-              className="text-sm text-black hover:text-brand-green  transition-colors"
-            >
-              NEWS
+          {/* Left side: Logo + Navigation Links */}
+          <div className="flex items-center gap-6 lg:gap-8">
+            {/* Logo */}
+            <Link href="/" className="flex items-center flex-shrink-0">
+              <Image
+                src="/logo.svg"
+                alt="Arbor"
+                width={120}
+                height={34}
+                className="w-[120px] h-[34px] mb-1"
+                priority
+              />
             </Link>
 
-            {/* CTA Button */}
+            {/* Desktop Navigation Links */}
+            <div className="hidden md:flex items-center gap-6 lg:gap-8">
+              <Link
+                href="/api"
+                className="text-sm text-black hover:text-brand-green  transition-colors tracking-wider"
+              >
+                API
+              </Link>
+              <Link
+                href="/company"
+                className="text-sm text-black hover:text-brand-green  transition-colors tracking-wider"
+              >
+                COMPANY
+              </Link>
+              <Link
+                href="/news"
+                className="text-sm text-black hover:text-brand-green  transition-colors tracking-wider"
+              >
+                NEWS
+              </Link>
+            </div>
+          </div>
+
+          {/* Right side: CTA Button (Desktop) */}
+          <div className="hidden md:block">
             <Button variant="solid">TRY ARBOR</Button>
           </div>
 
@@ -102,7 +107,7 @@ export const Navbar = () => {
                   alt="Arbor"
                   width={100}
                   height={28}
-                  className="w-[100px] h-[28px]"
+                  className="w-[120px] h-[34px] mb-1"
                   priority
                 />
               </Link>
