@@ -22,7 +22,7 @@ export const Hero = () => {
 
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center bg-background overflow-hidden">
-      <div className="relative w-full max-w-[90rem] mx-auto">
+      <div className="relative w-full max-w-[90rem] mx-auto min-h-screen">
         {/* Background Logo with Fade */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
           <div className="relative w-full h-full flex items-end justify-center pb-16">
@@ -48,7 +48,7 @@ export const Hero = () => {
         </div>
 
         {/* Centered Chat Input */}
-        <div className="relative z-10 w-full flex items-center justify-center px-4 md:px-8 lg:px-16 min-h-screen">
+        <div className="relative z-10 w-full flex items-center justify-center px-4 md:px-8 lg:px-16 min-h-[calc(100vh-8rem)] md:min-h-screen">
           <form onSubmit={handleSubmit} className="w-full max-w-3xl">
             <div className="relative">
               <textarea
@@ -56,11 +56,11 @@ export const Hero = () => {
                 onChange={(e) => setInputValue(e.target.value)}
                 placeholder="What do you want to know?"
                 rows={3}
-                className="w-full px-6 py-6 bg-background text-black placeholder:text-black/40 focus:outline-none rounded-[30px] border border-black/10 shadow-sm hover:shadow-md transition-shadow duration-300 pr-20 resize-none"
+                className="w-full px-6 py-6 bg-background text-black placeholder:text-black/40 focus:outline-none rounded-[30px] border border-black/10  duration-300 pr-20 resize-none touch-manipulation"
               />
               <button
                 type="submit"
-                className="absolute bottom-3 right-2.5 w-10 h-10 rounded-full bg-brand-green text-background flex items-center justify-center hover:bg-brand-green/90 transition-colors duration-10 "
+                className="absolute bottom-3 right-2.5 w-11 h-11 rounded-full bg-brand-green text-background flex items-center justify-center hover:bg-brand-green/90 transition-colors duration-10 touch-manipulation"
                 aria-label="Submit"
               >
                 <UpArrow className="w-5 h-5" />
