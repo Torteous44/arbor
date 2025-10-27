@@ -1,6 +1,6 @@
 export const SolutionSection = () => {
   return (
-    <section className="relative w-full py-16 md:py-24 lg:py-32 px-4 md:px-8 lg:px-16 bg-background">
+    <section className="relative w-full px-4 md:px-0  lg:px-0 py-16 md:py-24 lg:py-32 bg-background max-w-[90rem] mx-auto">
       <div className="w-full">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-8 md:mb-12">
@@ -39,7 +39,10 @@ export const SolutionSection = () => {
                 <div className="flex justify-start">
                   <div className="bg-black/5 text-black px-4 py-3 rounded-[20px] rounded-tl-sm max-w-[85%]">
                     <p className="text-sm leading-relaxed">
-                      Photosynthesis is the process by which plants convert light energy into chemical energy. It occurs in chloroplasts and involves capturing sunlight to transform carbon dioxide and water into glucose and oxygen.
+                      Photosynthesis is the process by which plants convert
+                      light energy into chemical energy. It occurs in
+                      chloroplasts and involves capturing sunlight to transform
+                      carbon dioxide and water into glucose and oxygen.
                     </p>
                   </div>
                 </div>
@@ -57,7 +60,9 @@ export const SolutionSection = () => {
                 <div className="flex justify-start">
                   <div className="bg-black/5 text-black px-4 py-3 rounded-[20px] rounded-tl-sm max-w-[85%]">
                     <p className="text-sm leading-relaxed">
-                      The two main stages are the light-dependent reactions, which occur in the thylakoid membranes and produce ATP and NADPH, and the Calvin cycle...
+                      The two main stages are the light-dependent reactions,
+                      which occur in the thylakoid membranes and produce ATP and
+                      NADPH, and the Calvin cycle...
                     </p>
                   </div>
                 </div>
@@ -114,7 +119,9 @@ export const SolutionSection = () => {
                 <div className="text-4xl font-medium text-black mb-1">
                   1.2 Wh
                 </div>
-                <div className="text-xs text-black/50">Total compute energy</div>
+                <div className="text-xs text-black/50">
+                  Total compute energy
+                </div>
               </div>
 
               {/* Energy Source Mix */}

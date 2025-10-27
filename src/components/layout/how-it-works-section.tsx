@@ -32,7 +32,7 @@ const Step = ({ number, title, body, chip, className = "" }: StepProps) => (
 export const HowItWorksSection = () => {
   return (
     <section className="relative w-full py-16 md:py-24 lg:py-32 px-4 md:px-8 lg:px-16 bg-background">
-      <div className="w-full">
+      <div className="w-full max-w-[90rem] mx-auto">
         <h2 className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] leading-[1.1] font-medium text-black mb-10 md:mb-14 lg:mb-16">
           How it works
         </h2>
