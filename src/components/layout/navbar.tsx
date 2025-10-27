@@ -4,9 +4,11 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { useWaitingList } from "@/contexts/waiting-list-context";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { openWaitingList } = useWaitingList();
 
   return (
     <>
@@ -52,7 +54,7 @@ export const Navbar = () => {
 
           {/* Right side: CTA Button (Desktop) */}
           <div className="hidden md:block">
-            <Button variant="solid">TRY ARBOR</Button>
+            <Button variant="solid" onClick={openWaitingList}>TRY ARBOR</Button>
           </div>
 
           {/* Mobile Right Side: Try Arbor + Hamburger (Circular Buttons) */}
@@ -61,6 +63,7 @@ export const Navbar = () => {
             <button
               className="px-4 py-2 h-10 rounded-full bg-brand-green text-background flex items-center justify-center text-xs font-medium hover:bg-brand-green/90 transition-colors whitespace-nowrap"
               aria-label="Try Arbor"
+              onClick={openWaitingList}
             >
               TRY ARBOR
             </button>
@@ -116,7 +119,10 @@ export const Navbar = () => {
                 <button
                   className="px-4 py-2 h-10 rounded-full bg-brand-green text-background flex items-center justify-center text-xs font-medium hover:bg-brand-green/90 transition-colors whitespace-nowrap"
                   aria-label="Try Arbor"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    openWaitingList();
+                  }}
                 >
                   TRY ARBOR
                 </button>

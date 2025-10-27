@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, IBM_Plex_Mono } from "next/font/google";
+import { WaitingListProvider } from "@/contexts/waiting-list-context";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,7 +29,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${ibmPlexMono.variable} antialiased`}
       >
-        {children}
+        <WaitingListProvider>
+          {children}
+        </WaitingListProvider>
       </body>
     </html>
   );

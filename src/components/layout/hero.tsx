@@ -4,14 +4,20 @@ import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { UpArrow } from "@/components/icons";
+import { useWaitingList } from "@/contexts/waiting-list-context";
 
 export const Hero = () => {
   const [inputValue, setInputValue] = useState("");
+  const { openWaitingList } = useWaitingList();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle chat submission
-    console.log("Submitted:", inputValue);
+    // Only open the waiting list modal if there's text in the input
+    if (inputValue.trim()) {
+      openWaitingList();
+      // Clear the input after opening modal
+      setInputValue("");
+    }
   };
 
   return (
@@ -76,10 +82,18 @@ export const Hero = () => {
 
               {/* Right: CTAs - horizontal above 640px, stacked below */}
               <div className="flex flex-col sm:flex-row items-end gap-3">
-                <Button variant="solid" className="whitespace-nowrap">
+                <Button 
+                  variant="solid" 
+                  className="whitespace-nowrap"
+                  onClick={openWaitingList}
+                >
                   TRY ARBOR
                 </Button>
-                <Button variant="outline" className="whitespace-nowrap">
+                <Button 
+                  variant="outline" 
+                  className="whitespace-nowrap"
+                  onClick={openWaitingList}
+                >
                   USE THE API
                 </Button>
               </div>
@@ -97,8 +111,8 @@ export const Hero = () => {
             </div>
             {/* Right CTAs */}
             <div className="flex items-center gap-4">
-              <Button variant="solid">TRY ARBOR</Button>
-              <Button variant="outline">USE THE API</Button>
+              <Button variant="solid" onClick={openWaitingList}>TRY ARBOR</Button>
+              <Button variant="outline" onClick={openWaitingList}>USE THE API</Button>
             </div>
           </div>
         </div>

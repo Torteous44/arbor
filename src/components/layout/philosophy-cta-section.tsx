@@ -1,6 +1,11 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import { useWaitingList } from "@/contexts/waiting-list-context";
 
 export const PhilosophyCTASection = () => {
+  const { openWaitingList } = useWaitingList();
+  
   return (
     <section className="relative w-full px-4 md:px-8 lg:px-16 py-24 md:py-32 lg:py-40 overflow-hidden bg-gradient-to-b from-[#fefefe] via-[#f7fbf9] to-[#f5f8f5]">
       <div className="max-w-[90rem] mx-auto relative">
@@ -27,6 +32,7 @@ export const PhilosophyCTASection = () => {
             <Button
               variant="solid"
               className="text-sm md:text-xs px-5 py-3 md:px-6 md:py-3 bg-black text-white hover:bg-black/90 rounded-full"
+              onClick={openWaitingList}
             >
               START USING SUSTAINABLE AI
             </Button>
@@ -34,6 +40,7 @@ export const PhilosophyCTASection = () => {
             <Button
               variant="outline"
               className="text-sm md:text-xs px-5 py-3 md:px-6 md:py-3 rounded-full border border-black/20 text-black/80 font-mono"
+              onClick={openWaitingList}
             >
               READ THE MANIFESTO
             </Button>
